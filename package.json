@@ -1,0 +1,19 @@
+{
+  "name": "amazon-playwright-automation",
+  "version": "1.0.0",
+  "description": "Playwright automation tests for Amazon.in - LambdaTest Assignment",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:parallel": "npx playwright test --workers=2",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report",
+    "test:lambdatest": "npx playwright test --config=lambdatest.config.js",
+    "lint": "eslint tests/ pages/ utils/"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.43.0",
+    "dotenv": "^16.4.5"
+  },
+  "author": "Uddeshya Kumar",
+  "license": "MIT"
+}
