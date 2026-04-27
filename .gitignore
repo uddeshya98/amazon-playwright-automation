@@ -6,3 +6,6 @@ screenshots/
 *.png
 *.mp4
 *.zip
+lambda_out.txt
+test_output.txt
+test-results.txt
