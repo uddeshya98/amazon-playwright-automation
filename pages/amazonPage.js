@@ -36,14 +36,11 @@ class AmazonPage {
         const firstProduct = this.productResults.first();
         const productLink = firstProduct.locator('h2 a').first();
         
-        // Amazon opens products in a new tab, so we need to handle the new tab
-        const [newPage] = await Promise.all([
-            this.page.context().waitForEvent('page'),
-            productLink.click()
-        ]);
+        const href = await productLink.getAttribute('href');
+        const url = href.startsWith('http') ? href : `https://www.amazon.in${href}`;
         
-        await newPage.waitForLoadState('domcontentloaded');
-        return new AmazonPage(newPage);
+        await this.page.goto(url, { waitUntil: 'domcontentloaded' });
+        return new AmazonPage(this.page);
     }
 
     async getPrice() {

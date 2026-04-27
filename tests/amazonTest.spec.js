@@ -30,9 +30,6 @@ test.describe('Amazon Product Search and Add to Cart', () => {
         await test.step('Add to cart', async () => {
             await productPage.addToCart();
         });
-        
-        // Close the new page after done to clean up
-        await productPage.page.close();
     });
 
     test('Test Case 2: Search Samsung Galaxy, get price and add to cart', async ({ page }) => {
@@ -61,9 +58,6 @@ test.describe('Amazon Product Search and Add to Cart', () => {
         await test.step('Add to cart', async () => {
             await productPage.addToCart();
         });
-        
-        // Close the new page after done to clean up
-        await productPage.page.close();
     });
 
 });
