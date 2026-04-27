@@ -1,0 +1,21 @@
+Subject: Submission for Automation Assignment - Customer Engineering Intern
+
+Hi TestMu AI Team,
+
+Thank you again for the opportunity to complete this automation assignment. I have successfully built and deployed the Playwright automation project as requested.
+
+Here are the key details of the implementation:
+- **Playwright (JavaScript)**: Used for robust and fast cross-browser automation.
+- **Parallel Execution**: Configured `fullyParallel: true` with multiple workers to run the iPhone and Samsung Galaxy test cases simultaneously, cutting execution time in half.
+- **LambdaTest Cloud Execution**: Integrated the test suite to run remotely on the LambdaTest Grid. The setup dynamically establishes a WebSocket connection and executes without any manual intervention.
+- **Stable Execution**: Used resilient selectors and graceful error handling to bypass standard Amazon bot detections and "See All Buying Options" UI variants.
+- **Clean Output**: Successfully prints the device prices (`iPhone Price: ₹...`, `Galaxy Price: ₹...`) directly to the console.
+
+**Repository Link**: https://github.com/uddeshya98/amazon-playwright-automation
+
+The repository contains a `README.md` with complete instructions on how to set up `.env` for LambdaTest, and how to run the project both locally and on the cloud. 
+
+Please let me know if you have any questions or require further clarification. I'm looking forward to your feedback and to the possibility of joining TestMu AI!
+
+Best regards,
+Uddeshya Kumar
